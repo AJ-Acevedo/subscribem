@@ -9,7 +9,6 @@ module Subscribem
         end
       end
     end
-
     helper_method :current_account
 
     def current_user
@@ -20,13 +19,11 @@ module Subscribem
         end
       end
     end
-
     helper_method :current_user
 
     def user_signed_in?
       env['warden'].authenticated?(:user)
     end
-    
     helper_method :user_signed_in?
     
   end
